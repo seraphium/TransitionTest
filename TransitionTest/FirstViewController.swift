@@ -8,24 +8,14 @@
 
 import UIKit
 
-class FirstViewController : UIViewController,
-PresentedViewControllerDelegate, UIViewControllerTransitioningDelegate {
+class FirstViewController : UIViewController {
 
-    let transitionAnimator = TransitionAnimator()
-    let dismissAnimator = TransitionDismissAnimator()
-    let panTransition = PanInteractiveTransition()
-    
+       
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! SecondViewController
-        destVC.delegate = self
-        destVC.transitioningDelegate = self
-        self.panTransition.panToDismiss(viewController: destVC)
+        
 
     }
     
-    func dismiss(viewController: UIViewController) {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     override func awakeFromNib() {
         
@@ -34,16 +24,5 @@ PresentedViewControllerDelegate, UIViewControllerTransitioningDelegate {
         
     }
     
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self.transitionAnimator
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self.dismissAnimator
-    }
-    
-    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return self.panTransition
-    }
-    
+      
 }
