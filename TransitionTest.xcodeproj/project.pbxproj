@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B71BEA71D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEA61D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift */; };
 		4B71BEA91D9E46740066E08B /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */; };
+		4B71BEAB1D9E4EF60066E08B /* PanInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEAA1D9E4EF50066E08B /* PanInteractiveTransition.swift */; };
+		4B71BEAD1D9E51840066E08B /* TransitionDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */; };
 		4BDD6A431D9D105700D683F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD6A421D9D105700D683F0 /* AppDelegate.swift */; };
 		4BDD6A451D9D105700D683F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD6A441D9D105700D683F0 /* ViewController.swift */; };
 		4BDD6A481D9D105700D683F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDD6A461D9D105700D683F0 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		4B71BEA61D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewControllerDelegate.swift; sourceTree = "<group>"; };
 		4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+		4B71BEAA1D9E4EF50066E08B /* PanInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanInteractiveTransition.swift; sourceTree = "<group>"; };
+		4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismissAnimator.swift; sourceTree = "<group>"; };
 		4BDD6A3F1D9D105600D683F0 /* TransitionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDD6A421D9D105700D683F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BDD6A441D9D105700D683F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				4BDD6A561D9D121200D683F0 /* SecondViewController.swift */,
 				4B71BEA61D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift */,
 				4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */,
+				4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */,
+				4B71BEAA1D9E4EF50066E08B /* PanInteractiveTransition.swift */,
 			);
 			path = TransitionTest;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				4BDD6A551D9D11E200D683F0 /* FirstViewController.swift in Sources */,
 				4B71BEA71D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift in Sources */,
 				4BDD6A451D9D105700D683F0 /* ViewController.swift in Sources */,
+				4B71BEAD1D9E51840066E08B /* TransitionDismissAnimator.swift in Sources */,
+				4B71BEAB1D9E4EF60066E08B /* PanInteractiveTransition.swift in Sources */,
 				4BDD6A431D9D105700D683F0 /* AppDelegate.swift in Sources */,
 				4B71BEA91D9E46740066E08B /* TransitionAnimator.swift in Sources */,
 			);

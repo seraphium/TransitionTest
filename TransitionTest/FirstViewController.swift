@@ -12,11 +12,15 @@ class FirstViewController : UIViewController,
 PresentedViewControllerDelegate, UIViewControllerTransitioningDelegate {
 
     let transitionAnimator = TransitionAnimator()
+    let dismissAnimator = TransitionDismissAnimator()
+    let panTransition = PanInteractiveTransition()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! SecondViewController
         destVC.delegate = self
         destVC.transitioningDelegate = self
+        self.panTransition.panToDismiss(viewController: destVC)
+
     }
     
     func dismiss(viewController: UIViewController) {
@@ -34,5 +38,12 @@ PresentedViewControllerDelegate, UIViewControllerTransitioningDelegate {
         return self.transitionAnimator
     }
     
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return self.dismissAnimator
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return self.panTransition
+    }
     
 }
