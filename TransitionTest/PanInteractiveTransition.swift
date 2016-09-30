@@ -24,7 +24,7 @@ class PanInteractiveTransition : UIPercentDrivenInteractiveTransition {
         let translation = gesture.translation(in: presentedVC.view)
         switch (gesture.state) {
         case .changed :
-            let percent = translation.y / 150 > 1 ? 1 : translation.y
+            let percent = translation.y / 300 <= 1 ? (translation.y / 300) : 1
             self.update(percent)
             print(percent)
         case .cancelled:
