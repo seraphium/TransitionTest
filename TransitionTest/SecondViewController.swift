@@ -10,10 +10,11 @@ import UIKit
 
 class SecondViewController : UIViewController {
     
+    var delegate : PresentedViewControllerDelegate?
     
     @IBAction func dismissClicked(_ sender: UIButton)
     {
-        
+        delegate?.dismiss(viewController: self)
         
     }
 }

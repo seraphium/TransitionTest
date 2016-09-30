@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B71BEA71D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEA61D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift */; };
 		4BDD6A431D9D105700D683F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD6A421D9D105700D683F0 /* AppDelegate.swift */; };
 		4BDD6A451D9D105700D683F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD6A441D9D105700D683F0 /* ViewController.swift */; };
 		4BDD6A481D9D105700D683F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDD6A461D9D105700D683F0 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B71BEA61D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewControllerDelegate.swift; sourceTree = "<group>"; };
 		4BDD6A3F1D9D105600D683F0 /* TransitionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDD6A421D9D105700D683F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BDD6A441D9D105700D683F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4BDD6A4E1D9D105700D683F0 /* Info.plist */,
 				4BDD6A541D9D11E200D683F0 /* FirstViewController.swift */,
 				4BDD6A561D9D121200D683F0 /* SecondViewController.swift */,
+				4B71BEA61D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift */,
 			);
 			path = TransitionTest;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				4BDD6A571D9D121200D683F0 /* SecondViewController.swift in Sources */,
 				4BDD6A551D9D11E200D683F0 /* FirstViewController.swift in Sources */,
+				4B71BEA71D9DFE0D0066E08B /* PresentedViewControllerDelegate.swift in Sources */,
 				4BDD6A451D9D105700D683F0 /* ViewController.swift in Sources */,
 				4BDD6A431D9D105700D683F0 /* AppDelegate.swift in Sources */,
 			);
@@ -305,6 +309,7 @@
 				4BDD6A531D9D105700D683F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

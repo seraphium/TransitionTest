@@ -8,7 +8,15 @@
 
 import UIKit
 
-class FirstViewController : UIViewController {
+class FirstViewController : UIViewController, PresentedViewControllerDelegate {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! SecondViewController
+        destVC.delegate = self
+        
+    }
     
+    func dismiss(viewController: UIViewController) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
