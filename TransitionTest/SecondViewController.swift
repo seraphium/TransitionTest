@@ -18,7 +18,7 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
     override func awakeFromNib() {
         self.transitioningDelegate = self
         self.modalPresentationStyle = UIModalPresentationStyle.custom
-
+        self.view.backgroundColor = UIColor.white
     }
     override func viewDidLoad()  {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction(gesture:)))

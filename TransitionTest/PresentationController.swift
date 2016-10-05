@@ -22,7 +22,7 @@ class PresentationController : UIPresentationController {
     
     override func presentationTransitionWillBegin() {
         bgView = UIView(frame: UIScreen.main.bounds)
-        bgView.backgroundColor = UIColor.red
+        bgView.backgroundColor = UIColor.white
         blurView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         blurView.frame = (self.containerView?.bounds)!
         bgView.insertSubview(blurView, at: 0)
@@ -36,7 +36,7 @@ class PresentationController : UIPresentationController {
         transitionCoordinator = self.presentingViewController.transitionCoordinator
         transitionCoordinator.animate(alongsideTransition: {context in
             
-            self.bgView.alpha = 0.7
+            self.bgView.alpha = 1.0
             self.presentingViewController.view.transform = self.presentingViewController.view.transform.scaledBy(x: 0.9, y: 0.9)
             }, completion: nil)
         

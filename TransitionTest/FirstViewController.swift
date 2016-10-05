@@ -20,6 +20,7 @@ class FirstViewController : UIViewController {
     override func awakeFromNib() {
         
         super.awakeFromNib()
+        self.view.backgroundColor = UIColor.white
         
         
     }
