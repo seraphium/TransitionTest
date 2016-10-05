@@ -15,13 +15,16 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
     let dismissAnimator = TransitionDismissAnimator()
     
 
+    override func awakeFromNib() {
+        self.transitioningDelegate = self
+        self.modalPresentationStyle = UIModalPresentationStyle.custom
+
+    }
     override func viewDidLoad()  {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction(gesture:)))
         
         self.view.addGestureRecognizer(panGesture)
-        self.transitioningDelegate = self
-        self.modalPresentationStyle = UIModalPresentationStyle.custom
-
+    
 
     }
     
@@ -57,6 +60,11 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
         return self.panTransition
     }
 
+    
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        let presentationController = PresentationController(presentedViewController: presented, presenting: presenting)
+        return presentationController
+    }
     
     @IBAction func dismissClicked(_ sender: UIButton)
     {
