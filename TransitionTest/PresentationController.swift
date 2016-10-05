@@ -22,6 +22,7 @@ class PresentationController : UIPresentationController {
     
     override func presentationTransitionWillBegin() {
         bgView = UIView(frame: UIScreen.main.bounds)
+        bgView.backgroundColor = UIColor.red
         blurView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         blurView.frame = (self.containerView?.bounds)!
         bgView.insertSubview(blurView, at: 0)
