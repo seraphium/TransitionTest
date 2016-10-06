@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,10 +51,39 @@
                                     <action selector="dismissClicked:" destination="hs8-0T-Mbl" eventType="touchUpInside" id="Ell-mk-Kym"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNW-sb-cp1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-Ba-zpL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-KD-xS9">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-2Z-BjV">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="D2f-Ba-zpL" secondAttribute="leading" id="Fua-cs-fGU"/>
+                            <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="D2f-Ba-zpL" secondAttribute="bottom" constant="8" id="N4K-qB-iGl"/>
+                            <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="cpa-KD-xS9" secondAttribute="bottom" constant="8" id="ROV-JD-NNP"/>
                             <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="GgG-jl-Eeb" secondAttribute="bottom" constant="92" id="btv-Dj-lzh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UrX-2Z-BjV" secondAttribute="leading" id="ddK-ck-biV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HNW-sb-cp1" secondAttribute="trailing" id="hHl-Z3-G5w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cpa-KD-xS9" secondAttribute="trailing" constant="-5" id="mcD-vm-YXF"/>
+                            <constraint firstItem="UrX-2Z-BjV" firstAttribute="top" secondItem="tNI-G0-w5x" secondAttribute="bottom" id="qFL-bN-M1m"/>
                             <constraint firstItem="GgG-jl-Eeb" firstAttribute="centerX" secondItem="Ota-Rg-ZIh" secondAttribute="centerX" id="rrW-it-blV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="D2f-Ba-zpL" secondAttribute="leading" id="w8x-Me-m9s"/>
+                            <constraint firstItem="HNW-sb-cp1" firstAttribute="top" secondItem="tNI-G0-w5x" secondAttribute="bottom" id="xUI-gR-OCb"/>
                         </constraints>
                     </view>
                 </viewController>

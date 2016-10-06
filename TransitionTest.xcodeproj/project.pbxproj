@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BED2DDAA5CC20C1E6F38100 /* Pods_TransitionTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A756F13F13C151635D070BA7 /* Pods_TransitionTest.framework */; };
 		4B442F431DA4CC0F009510B2 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B442F421DA4CC0F009510B2 /* PresentationController.swift */; };
 		4B71BEA91D9E46740066E08B /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */; };
 		4B71BEAD1D9E51840066E08B /* TransitionDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4988FA2F6E39E92798EEDB5C /* Pods-TransitionTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitionTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransitionTest/Pods-TransitionTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4B442F421DA4CC0F009510B2 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 		4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismissAnimator.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		4BDD6A4E1D9D105700D683F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BDD6A541D9D11E200D683F0 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4BDD6A561D9D121200D683F0 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9B4EAE5714B6B95AA49D060A /* Pods-TransitionTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitionTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransitionTest/Pods-TransitionTest.release.xcconfig"; sourceTree = "<group>"; };
+		A756F13F13C151635D070BA7 /* Pods_TransitionTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransitionTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BED2DDAA5CC20C1E6F38100 /* Pods_TransitionTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				4BDD6A411D9D105700D683F0 /* TransitionTest */,
 				4BDD6A401D9D105600D683F0 /* Products */,
+				A706C7A5F89CCEC7C155133B /* Pods */,
+				CEAE7BB58F689F531786B0B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			path = TransitionTest;
 			sourceTree = "<group>";
 		};
+		A706C7A5F89CCEC7C155133B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4988FA2F6E39E92798EEDB5C /* Pods-TransitionTest.debug.xcconfig */,
+				9B4EAE5714B6B95AA49D060A /* Pods-TransitionTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEAE7BB58F689F531786B0B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A756F13F13C151635D070BA7 /* Pods_TransitionTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BDD6A511D9D105700D683F0 /* Build configuration list for PBXNativeTarget "TransitionTest" */;
 			buildPhases = (
+				39EEC96534AC048C6F58C986 /* [CP] Check Pods Manifest.lock */,
 				4BDD6A3B1D9D105600D683F0 /* Sources */,
 				4BDD6A3C1D9D105600D683F0 /* Frameworks */,
 				4BDD6A3D1D9D105600D683F0 /* Resources */,
+				52F6FE4C5A94A0C0CDF7DD8E /* [CP] Embed Pods Frameworks */,
+				1B5882065E842BD67DCC29BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +139,7 @@
 					4BDD6A3E1D9D105600D683F0 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7TXG2EZRXQ;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,6 +174,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B5882065E842BD67DCC29BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitionTest/Pods-TransitionTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39EEC96534AC048C6F58C986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52F6FE4C5A94A0C0CDF7DD8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitionTest/Pods-TransitionTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BDD6A3B1D9D105600D683F0 /* Sources */ = {
@@ -202,6 +278,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -230,6 +307,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -251,6 +329,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,13 +350,16 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		4BDD6A521D9D105700D683F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4988FA2F6E39E92798EEDB5C /* Pods-TransitionTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7TXG2EZRXQ;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
@@ -291,7 +373,9 @@
 		};
 		4BDD6A531D9D105700D683F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B4EAE5714B6B95AA49D060A /* Pods-TransitionTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7TXG2EZRXQ;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
