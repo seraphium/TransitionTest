@@ -6,4 +6,5 @@ pod "Alamofire", "~> 4.0"
 pod "SnapKit"
 pod "SwiftyJSON"
 pod "SVProgressHUD"
+pod "Kingfisher"
 end

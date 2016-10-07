@@ -8,8 +8,12 @@
 
 import UIKit
 import SVProgressHUD
+import Kingfisher
 
 class SecondViewController : UIViewController, UIViewControllerTransitioningDelegate {
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var imageView: UIImageView!
     
     var panTransition : UIPercentDrivenInteractiveTransition?
     let transitionAnimator = TransitionAnimator()
@@ -20,19 +24,27 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
         self.transitioningDelegate = self
         self.modalPresentationStyle = UIModalPresentationStyle.custom
         self.view.backgroundColor = UIColor.white
+        
     }
     override func viewDidLoad()  {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction(gesture:)))
         
         self.view.addGestureRecognizer(panGesture)
-    
+        self.view.layer.masksToBounds = true
+        
+        self.imageView.layer.zPosition = -1000
+      //  self.imageView.layer.roundCorners(corners: [.topLeft], radius: 8.0)
         loadNews()
     }
-    
+
     func panGestureAction(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: self.view)
+      
         switch (gesture.state) {
         case .began:
+            if abs(translation.x) > abs(translation.y) || translation.y < 0 {
+                return
+            }
             panTransition = UIPercentDrivenInteractiveTransition()
             self.dismiss(animated: true, completion: nil)
         case .changed :
@@ -79,13 +91,31 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
         NetworkManager.sharedManager.loadTopNews(type: .shishang) {
             items in
             SVProgressHUD.dismiss()
-
+            
             if let newsItems = items {
                 print(newsItems.count)
-                
+                let randNum = Int(arc4random_uniform(UInt32(newsItems.count)))
+
+                let first = newsItems[randNum]
+                let url = URL(string: first.thumbnail_pic_s!)!
+                self.titleLabel.text = first.title
+                self.imageView.kf.setImage(with: url, placeholder: nil, options: [.transition(.fade(1))], progressBlock: nil, completionHandler: nil)
             }
             
         }
     
+    }
+}
+
+//MARK: - extension Customized CALayer corner radius
+extension CALayer {
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let maskPath = UIBezierPath(roundedRect: bounds,
+                                    byRoundingCorners: corners,
+                                    cornerRadii: CGSize(width: radius, height: radius))
+        
+        let shape = CAShapeLayer()
+        shape.path = maskPath.cgPath
+        mask = shape
     }
 }

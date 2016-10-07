@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,15 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-Oo-EUv">
-                                <frame key="frameInset" minX="164" minY="558" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-Oo-EUv">
+                                <state key="normal" title="Load News"/>
                                 <connections>
                                     <segue destination="hs8-0T-Mbl" kind="presentation" id="tDW-pz-lNo"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="TBC-Oo-EUv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SG1-WL-OCU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TBC-Oo-EUv" secondAttribute="bottom" constant="60" id="p7k-MU-IL8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -46,50 +47,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgG-jl-Eeb">
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="dismissClicked:" destination="hs8-0T-Mbl" eventType="touchUpInside" id="Ell-mk-Kym"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNW-sb-cp1">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-Ba-zpL">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-KD-xS9">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-2Z-BjV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njv-Jv-1HT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KNM-8L-nB5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVb-Kg-yoO">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="D2f-Ba-zpL" secondAttribute="leading" id="Fua-cs-fGU"/>
-                            <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="D2f-Ba-zpL" secondAttribute="bottom" constant="8" id="N4K-qB-iGl"/>
-                            <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="cpa-KD-xS9" secondAttribute="bottom" constant="8" id="ROV-JD-NNP"/>
-                            <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="GgG-jl-Eeb" secondAttribute="bottom" constant="92" id="btv-Dj-lzh"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="UrX-2Z-BjV" secondAttribute="leading" id="ddK-ck-biV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HNW-sb-cp1" secondAttribute="trailing" id="hHl-Z3-G5w"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cpa-KD-xS9" secondAttribute="trailing" constant="-5" id="mcD-vm-YXF"/>
-                            <constraint firstItem="UrX-2Z-BjV" firstAttribute="top" secondItem="tNI-G0-w5x" secondAttribute="bottom" id="qFL-bN-M1m"/>
+                            <constraint firstItem="Njv-Jv-1HT" firstAttribute="centerX" secondItem="Ota-Rg-ZIh" secondAttribute="centerX" id="3ME-33-Piw"/>
+                            <constraint firstItem="Njv-Jv-1HT" firstAttribute="width" secondItem="Ota-Rg-ZIh" secondAttribute="width" id="8Go-W1-exJ"/>
+                            <constraint firstItem="CVb-Kg-yoO" firstAttribute="bottom" secondItem="Njv-Jv-1HT" secondAttribute="bottom" constant="-20" id="Pii-Ux-vr9"/>
+                            <constraint firstItem="Njv-Jv-1HT" firstAttribute="top" secondItem="tNI-G0-w5x" secondAttribute="bottom" id="TsY-ge-SXP"/>
+                            <constraint firstItem="36p-vs-xWF" firstAttribute="top" secondItem="GgG-jl-Eeb" secondAttribute="bottom" constant="60" id="btv-Dj-lzh"/>
+                            <constraint firstItem="CVb-Kg-yoO" firstAttribute="centerX" secondItem="Ota-Rg-ZIh" secondAttribute="centerX" id="jYe-hs-1KP"/>
                             <constraint firstItem="GgG-jl-Eeb" firstAttribute="centerX" secondItem="Ota-Rg-ZIh" secondAttribute="centerX" id="rrW-it-blV"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="D2f-Ba-zpL" secondAttribute="leading" id="w8x-Me-m9s"/>
-                            <constraint firstItem="HNW-sb-cp1" firstAttribute="top" secondItem="tNI-G0-w5x" secondAttribute="bottom" id="xUI-gR-OCb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Njv-Jv-1HT" id="l4I-Md-gYV"/>
+                        <outlet property="titleLabel" destination="CVb-Kg-yoO" id="iBR-QB-mOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUb-pa-ptX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="110"/>
+            <point key="canvasLocation" x="860" y="109.29535232383809"/>
         </scene>
     </scenes>
 </document>
