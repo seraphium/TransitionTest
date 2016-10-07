@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SecondViewController : UIViewController, UIViewControllerTransitioningDelegate {
     
@@ -25,7 +26,7 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
         
         self.view.addGestureRecognizer(panGesture)
     
-
+        loadNews()
     }
     
     func panGestureAction(gesture: UIPanGestureRecognizer) {
@@ -69,5 +70,22 @@ class SecondViewController : UIViewController, UIViewControllerTransitioningDele
     @IBAction func dismissClicked(_ sender: UIButton)
     {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    //MARK: - main logic
+    func loadNews() {
+        SVProgressHUD.show(withStatus: "正在加载...")
+
+        NetworkManager.sharedManager.loadTopNews(type: .shishang) {
+            items in
+            SVProgressHUD.dismiss()
+
+            if let newsItems = items {
+                print(newsItems.count)
+                
+            }
+            
+        }
+    
     }
 }

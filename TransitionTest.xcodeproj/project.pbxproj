@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3BED2DDAA5CC20C1E6F38100 /* Pods_TransitionTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A756F13F13C151635D070BA7 /* Pods_TransitionTest.framework */; };
 		4B442F431DA4CC0F009510B2 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B442F421DA4CC0F009510B2 /* PresentationController.swift */; };
+		4B6618DD1DA7682E00205C87 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6618DC1DA7682E00205C87 /* NetworkManager.swift */; };
+		4B6618DF1DA7726B00205C87 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6618DE1DA7726B00205C87 /* NewsItem.swift */; };
 		4B71BEA91D9E46740066E08B /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */; };
 		4B71BEAD1D9E51840066E08B /* TransitionDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */; };
 		4BDD6A431D9D105700D683F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD6A421D9D105700D683F0 /* AppDelegate.swift */; };
-		4BDD6A451D9D105700D683F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD6A441D9D105700D683F0 /* ViewController.swift */; };
 		4BDD6A481D9D105700D683F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDD6A461D9D105700D683F0 /* Main.storyboard */; };
 		4BDD6A4A1D9D105700D683F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDD6A491D9D105700D683F0 /* Assets.xcassets */; };
 		4BDD6A4D1D9D105700D683F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDD6A4B1D9D105700D683F0 /* LaunchScreen.storyboard */; };
@@ -23,11 +24,12 @@
 /* Begin PBXFileReference section */
 		4988FA2F6E39E92798EEDB5C /* Pods-TransitionTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitionTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransitionTest/Pods-TransitionTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4B442F421DA4CC0F009510B2 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		4B6618DC1DA7682E00205C87 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4B6618DE1DA7726B00205C87 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 		4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismissAnimator.swift; sourceTree = "<group>"; };
 		4BDD6A3F1D9D105600D683F0 /* TransitionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDD6A421D9D105700D683F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BDD6A441D9D105700D683F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4BDD6A471D9D105700D683F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BDD6A491D9D105700D683F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BDD6A4C1D9D105700D683F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				4BDD6A421D9D105700D683F0 /* AppDelegate.swift */,
-				4BDD6A441D9D105700D683F0 /* ViewController.swift */,
 				4BDD6A461D9D105700D683F0 /* Main.storyboard */,
 				4BDD6A491D9D105700D683F0 /* Assets.xcassets */,
 				4BDD6A4B1D9D105700D683F0 /* LaunchScreen.storyboard */,
@@ -82,6 +83,8 @@
 				4B71BEA81D9E46730066E08B /* TransitionAnimator.swift */,
 				4B71BEAC1D9E51840066E08B /* TransitionDismissAnimator.swift */,
 				4B442F421DA4CC0F009510B2 /* PresentationController.swift */,
+				4B6618DC1DA7682E00205C87 /* NetworkManager.swift */,
+				4B6618DE1DA7726B00205C87 /* NewsItem.swift */,
 			);
 			path = TransitionTest;
 			sourceTree = "<group>";
@@ -231,8 +234,9 @@
 				4BDD6A571D9D121200D683F0 /* SecondViewController.swift in Sources */,
 				4BDD6A551D9D11E200D683F0 /* FirstViewController.swift in Sources */,
 				4B442F431DA4CC0F009510B2 /* PresentationController.swift in Sources */,
-				4BDD6A451D9D105700D683F0 /* ViewController.swift in Sources */,
+				4B6618DD1DA7682E00205C87 /* NetworkManager.swift in Sources */,
 				4B71BEAD1D9E51840066E08B /* TransitionDismissAnimator.swift in Sources */,
+				4B6618DF1DA7726B00205C87 /* NewsItem.swift in Sources */,
 				4BDD6A431D9D105700D683F0 /* AppDelegate.swift in Sources */,
 				4B71BEA91D9E46740066E08B /* TransitionAnimator.swift in Sources */,
 			);
@@ -359,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4988FA2F6E39E92798EEDB5C /* Pods-TransitionTest.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7TXG2EZRXQ;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
@@ -375,7 +379,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B4EAE5714B6B95AA49D060A /* Pods-TransitionTest.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7TXG2EZRXQ;
 				INFOPLIST_FILE = TransitionTest/Info.plist;

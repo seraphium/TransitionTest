@@ -4,4 +4,6 @@ use_frameworks!
 target "TransitionTest" do
 pod "Alamofire", "~> 4.0"
 pod "SnapKit"
+pod "SwiftyJSON"
+pod "SVProgressHUD"
 end
