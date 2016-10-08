@@ -363,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4988FA2F6E39E92798EEDB5C /* Pods-TransitionTest.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7TXG2EZRXQ;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
@@ -379,7 +379,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B4EAE5714B6B95AA49D060A /* Pods-TransitionTest.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7TXG2EZRXQ;
 				INFOPLIST_FILE = TransitionTest/Info.plist;
