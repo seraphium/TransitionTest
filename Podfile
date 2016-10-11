@@ -7,4 +7,6 @@ pod "SnapKit"
 pod "SwiftyJSON"
 pod "SVProgressHUD"
 pod "Kingfisher"
+pod "HandyJSON", "~> 1.1.0"
+
 end
